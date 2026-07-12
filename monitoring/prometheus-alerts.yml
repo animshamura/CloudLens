@@ -1,0 +1,11 @@
+groups:
+  - name: api-gateway.rules
+    rules:
+      - alert: HighRequestRate
+        expr: rate(http_requests_total[5m]) > 10
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: High request rate detected
+          description: The API gateway is receiving a high volume of requests.

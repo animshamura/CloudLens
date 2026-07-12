@@ -1,0 +1,21 @@
+# Binaries
+api-gateway
+*.exe
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Test coverage
+coverage.out
+
+# Environment files
+.env
+.env.*
+
+# Docker / local data
+*.log

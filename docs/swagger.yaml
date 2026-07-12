@@ -1,0 +1,53 @@
+basePath: /
+host: localhost:8080
+info:
+  contact: {}
+  description: A cloud-native e-commerce API gateway service
+  title: CloudLens API Gateway
+  version: "1.0"
+paths:
+  /:
+    get:
+      description: Returns a welcome message
+      produces:
+      - text/plain
+      responses:
+        "200":
+          description: cloud-native-ecommerce api gateway
+          schema:
+            type: string
+      summary: Welcome to API Gateway
+  /health/live:
+    get:
+      description: Returns liveness and readiness status
+      produces:
+      - text/plain
+      responses:
+        "200":
+          description: ready
+          schema:
+            type: string
+        "404":
+          description: Not Found
+          schema:
+            type: string
+      summary: Health check endpoint
+  /health/ready:
+    get:
+      description: Returns liveness and readiness status
+      produces:
+      - text/plain
+      responses:
+        "200":
+          description: ready
+          schema:
+            type: string
+        "404":
+          description: Not Found
+          schema:
+            type: string
+      summary: Health check endpoint
+schemes:
+- http
+- https
+swagger: "2.0"
