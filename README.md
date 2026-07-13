@@ -1,4 +1,4 @@
-# CloudLens
+# Cloud Native Ecommerce Platform
 
 A production-oriented, cloud-native e-commerce platform built in Go with a clean-architecture foundation, container-first deployment, and service-oriented structure.
 
